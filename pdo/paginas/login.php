@@ -5,20 +5,30 @@
         <title>Corujao</title>
     </head>
     <body>
-        <center>
-            <h1>Memories</h1><br/>
-            <h3>Porque há coisas que não se pode esquecer</h3>
-        </center><br/><br/><br/>
-        <form action="../forms/processaForms.php" method="POST">
-            <label for="">
-                Email:
-            </label>
-            <input class="form-control" name="email" type="text" placeholder = "Digite seu email" >
-            <label for="">
-                Senha:
-            </label>
-            <input class="form-control" name="senha" type="password" placeholder = "Sua Senha" >
-            <input type="submit" class="btn btn-sucess" value="entrar" name="login">
-         </form>
+    <div class="row" style="margin: 5rem 0;">
+        <div class="col-md-3 col-md-offset-7 " style="margin: 0 auto; ">
+            <h1>Login</h1>
+            <form action="../forms/processaForms.php" method="POST">
+
+            <div class="form-group">
+                <label for=""> Email:</label>
+                <input class="form-control" name="email" type="text" placeholder = "Digite seu email" >
+            </div>
+            <div class="form-group">
+                <label for="">Senha:</label>
+                <input class="form-control" name="senha" type="password" placeholder = "Sua Senha" >
+            </div>
+            <div class="form-group">
+
+                <input type="submit" class="btn btn-sucess" value="entrar" name="login">
+            </div>
+
+            </form>
+        </div>
+
+    </div>
+       
+
+         <script src="../bootstrap/js/bootstrap.min.js""></script>
     </body>
 </html>

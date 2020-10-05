@@ -5,8 +5,6 @@
         return consultarRegistroPorUsuarioDAO($apelido);
     }
   function inserirBO($titulo, $texto) {
-    $titulo = strtoupper($titulo);
-    $texto = strtoupper($texto);
     inserirDAO($titulo, $texto);		
   }
     

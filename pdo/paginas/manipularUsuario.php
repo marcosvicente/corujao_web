@@ -10,16 +10,29 @@
             include("proteger.php");
             protect();
         ?>
-
+        <nav class="navbar navbar-default" style="background:#f8f8f8">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        Corujão
+                    </a>
+                </div>
+                <p class="navbar-text navbar-right"> <a href="logout.php" class="navbar-link">Logout</a></p>
+            </div>
+        </nav>
         <div id="manipular">
-                <table class="table table-striped table-bordered table-hover">
+        <div class="row">
+                <div class="col-md-8  " style="margin: 0 auto; ">
+                <a href="inicial.php" style="float:right; "><button class="btn btn-default right" >Voltar ao inicio</button></a>   
+                <table class="table table-striped table-bordered ">
                     <thead>
                         <tr>
                             <th>Id</th>
-                            <th>nome</th>
-                            <th>email</th>
+                            <th>Nome</th>
+                            <th>Email</th>
                             <th>Registro Profissional</th>
                             <th>Tipo usuario</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                 
@@ -96,6 +109,7 @@
 				}
         
 			?>
-            <a href="inicial.php"><button>Voltar ao inicio</button></a>
+            </div>
+            </div>
     </body>
 </html>

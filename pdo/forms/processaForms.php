@@ -29,7 +29,6 @@
         }
     }
 	if($_POST["login"] == "incluir"){
-
         if(!empty($_POST["titulo"]) && !empty($_POST["texto"])){
 			$titulo = $_POST["titulo"];
 			$texto = $_POST["texto"];
