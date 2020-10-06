@@ -10,9 +10,6 @@
     
   
   function inserirUsuarioBO($nome, $email, $senha, $registro_profissional, $tipo_usuario) {
-    $nome = strtoupper($nome);
-    $email = strtoupper($email);
-    $senha = strtoupper($senha);
     $registro_profissional = strtoupper($registro_profissional);
     $tipo_usuario = strtoupper($tipo_usuario);
 

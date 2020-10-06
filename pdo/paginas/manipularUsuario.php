@@ -49,7 +49,13 @@
                                     echo "<td> $registro->nome </td>";
                                     echo "<td> $registro->email </td>";
                                     echo "<td> $registro->registro_profissional </td>";
-                                    echo "<td> $registro->tipo_usuario </td>";
+                                    if($registro->tipo_usuario == 1){
+                                        echo "<td> Leitor </td>";
+                                    } else if($registro->tipo_usuario == 2){
+                                        echo "<td> Revisor </td>";
+                                    } else if($registro->tipo_usuario == 3){
+                                        echo "<td> Redator </td>";
+                                    } 
                                     echo "<td>
                                     <a href=\"manipularUsuario.php?idParaAtualizar=$registro->id&nome=$registro->nome&email=$registro->email&registro_profissional=$registro->registro_profissional\" class=\"btn btn-success\">
                                         <span class=\"glyphicon glyphicon-edit\"></span> 
